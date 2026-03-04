@@ -14,7 +14,135 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      eeg_sessions: {
+        Row: {
+          ai_summary: string | null
+          alpha_power: number | null
+          attention_score: number | null
+          beta_power: number | null
+          case_id: string | null
+          class_name: string | null
+          cognitive_performance: number | null
+          confidence: number | null
+          created_at: string
+          current_medications: string | null
+          delta_power: number | null
+          depression_risk: number | null
+          device_id: string | null
+          diagnosis_notes: string | null
+          doctor_name: string | null
+          eeg_channels: Json
+          emotional_stability: number | null
+          gamma_power: number | null
+          gender: string | null
+          id: string
+          institution: string | null
+          investigation_type: string | null
+          medical_history: string | null
+          mental_score: number | null
+          mental_state_label: string | null
+          module: string
+          patient_id: string | null
+          person_age: number
+          person_name: string
+          processed: boolean
+          radar_data: Json | null
+          role: string
+          session_context: string | null
+          session_type: string
+          stress_probability: number | null
+          stress_timeline: Json | null
+          student_id: string | null
+          suspect_id: string | null
+          theta_power: number | null
+          updated_at: string
+        }
+        Insert: {
+          ai_summary?: string | null
+          alpha_power?: number | null
+          attention_score?: number | null
+          beta_power?: number | null
+          case_id?: string | null
+          class_name?: string | null
+          cognitive_performance?: number | null
+          confidence?: number | null
+          created_at?: string
+          current_medications?: string | null
+          delta_power?: number | null
+          depression_risk?: number | null
+          device_id?: string | null
+          diagnosis_notes?: string | null
+          doctor_name?: string | null
+          eeg_channels?: Json
+          emotional_stability?: number | null
+          gamma_power?: number | null
+          gender?: string | null
+          id?: string
+          institution?: string | null
+          investigation_type?: string | null
+          medical_history?: string | null
+          mental_score?: number | null
+          mental_state_label?: string | null
+          module: string
+          patient_id?: string | null
+          person_age: number
+          person_name: string
+          processed?: boolean
+          radar_data?: Json | null
+          role: string
+          session_context?: string | null
+          session_type?: string
+          stress_probability?: number | null
+          stress_timeline?: Json | null
+          student_id?: string | null
+          suspect_id?: string | null
+          theta_power?: number | null
+          updated_at?: string
+        }
+        Update: {
+          ai_summary?: string | null
+          alpha_power?: number | null
+          attention_score?: number | null
+          beta_power?: number | null
+          case_id?: string | null
+          class_name?: string | null
+          cognitive_performance?: number | null
+          confidence?: number | null
+          created_at?: string
+          current_medications?: string | null
+          delta_power?: number | null
+          depression_risk?: number | null
+          device_id?: string | null
+          diagnosis_notes?: string | null
+          doctor_name?: string | null
+          eeg_channels?: Json
+          emotional_stability?: number | null
+          gamma_power?: number | null
+          gender?: string | null
+          id?: string
+          institution?: string | null
+          investigation_type?: string | null
+          medical_history?: string | null
+          mental_score?: number | null
+          mental_state_label?: string | null
+          module?: string
+          patient_id?: string | null
+          person_age?: number
+          person_name?: string
+          processed?: boolean
+          radar_data?: Json | null
+          role?: string
+          session_context?: string | null
+          session_type?: string
+          stress_probability?: number | null
+          stress_timeline?: Json | null
+          student_id?: string | null
+          suspect_id?: string | null
+          theta_power?: number | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
